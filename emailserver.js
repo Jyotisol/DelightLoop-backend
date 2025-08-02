@@ -7,12 +7,12 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ['http://localhost:3000', 'http://localhost:5173'],
+    origin: ['https://delight-loop-frontend-enua.vercel.app/', 'http://localhost:5173'],
     methods: ['GET', 'POST'],
   },
 });
 
-const mongoUrl = 'mongodb://localhost:27017';
+const mongoUrl = 'mongodb+srv://jyoti989solanki:YHvvFptvvjDlTKOt@cluster0.2il37mu.mongodb.net/DelightLoop';
 const client = new MongoClient(mongoUrl);
 const dbName = 'campaignDB';
 let db;
