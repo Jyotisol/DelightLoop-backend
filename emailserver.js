@@ -7,7 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ['https://delight-loop-frontend-enua.vercel.app/', 'http://localhost:5173'],
+    origin: ['https://delight-loop-frontend-enua.vercel.app/', 'http://localhost:5173', 'http://localhost:3000'],
     methods: ['GET', 'POST'],
   },
 });
